@@ -93,6 +93,7 @@ elif negocio != negocios[3]:
 if st.button("Emprende"):
     st.balloons()
     #pos_neg_C3 = 0
-    st.success(example_set)
+    st.success(Su negocio es similar a negocios que han sido exitosos dentro de Quito)
+    
         
 
