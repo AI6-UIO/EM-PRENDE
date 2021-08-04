@@ -83,7 +83,8 @@ neg_C3 = (101,110,120,131,141,151,161,170,181,191,201,210,221,231,241,251)
 
 opt1 = list(range(len(negocios)))
 pos_negocios = st.selectbox("Mi área principal de negocio es:",opt1,format_func = lambda x:negocios[x])
-st.info(pos_negocios)
+#Uncomment the next line for debugging:
+#st.info(pos_negocios)
 #st.header("Negocios pos_negocios:")
 #st.info(pos_negocios)
 
@@ -91,11 +92,11 @@ st.info(pos_negocios)
 if pos_negocios == 3:
     opt = list(range(len(neg_C)))
     #C = st.selectbox("Industrias manufactureras",neg_C)
-    pos_C = st.selectbox("Industrias manufactureras",opt,format_func = lambda x:neg_C[x])
+    pos_C = st.selectbox("Industrias manufactureras. El subsector económico qué mas se acerca a mi negocio es",opt,format_func = lambda x:neg_C[x])
     st.info(neg_C[pos_C])
     pos_neg_C3 = pos_C - 1
-    #example_set = (tmn,neg_C3[pos_neg_C3],tmn)
-    #st.info(example_set)
+    CIIU_3numbers = (neg_C3[pos_neg_C3])
+    st.info(CIIU_3numbers)
 elif pos_negocio != 3:
     st.write("Aun en construcción")
     
