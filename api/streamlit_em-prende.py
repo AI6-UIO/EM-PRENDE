@@ -86,12 +86,7 @@ pos_negocios = st.selectbox("Mi área principal de negocio es:",opt1,format_func
 st.info(pos_negocios)
 #st.header("Negocios pos_negocios:")
 #st.info(pos_negocios)
-codigo_negocios = np.zeros(21,dtype=np.int16)
-st.info(codigo_negocios)
-codigo_negocios[pos_negocios - 1] = 1
-st.info(codigo_negocios)
-tmn.extend(codigo_negocios)
-st.info(tmn)
+
 
 if negocio == negocios[3]:
     opt = list(range(len(neg_C)))
@@ -110,6 +105,12 @@ if st.button("Emprende"):
     #pos_neg_C3 = 0
     st.success("Su negocio es similar a negocios que han sido exitosos dentro de Quito")
     st.warning("Avertencia: Su negocio es similar a negocios poco exitosos dentro de Quito")
+    codigo_negocios = np.zeros(21,dtype=np.int16)
+    st.info(codigo_negocios)
+    codigo_negocios[pos_negocios - 1] = 1
+    st.info(codigo_negocios)
+    tmn.extend(codigo_negocios)
+    st.info(tmn)
     
     
         
