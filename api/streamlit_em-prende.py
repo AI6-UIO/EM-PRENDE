@@ -21,13 +21,13 @@ t = ["","Microempresa","Pequeña empresa","Mediana empresa","Grande empresa"]
 t1 = st.selectbox("El tamaño de mi negocio es:",t)
 st.info(t1)
 if t1 == "Microempresa":
-    tmn = 1
+    tmn = (1,0,0,0)
 elif t1 == "Pequeña empresa":
-    tmn = 2
+    tmn = (0,1,0,0)
 elif t1 == "Mediana empresa":
-    tmn = 3
+    tmn = (0,0,1,0)
 elif t1 == "Grande empresa":
-    tmn = 4
+    tmn = (0,0,0,1)
 
 st.header("¿Cuál es tu principal área de negocio?")
 
