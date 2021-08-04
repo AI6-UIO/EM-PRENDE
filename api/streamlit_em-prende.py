@@ -90,6 +90,7 @@ pos_negocios = st.selectbox("Mi área principal de negocio es:",opt1,format_func
 
 
 if pos_negocios == 3:
+    st.header("¿Cuál es el subsector más cercano a tu principal área de negocio?")
     opt = list(range(len(neg_C)))
     #C = st.selectbox("Industrias manufactureras",neg_C)
     pos_C = st.selectbox("Industrias manufactureras",opt,format_func = lambda x:neg_C[x])
