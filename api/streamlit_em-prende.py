@@ -88,7 +88,7 @@ st.info(pos_negocios)
 #st.info(pos_negocios)
 
 
-if negocio == negocios[3]:
+if pos_negocios == negocios[3]:
     opt = list(range(len(neg_C)))
     #C = st.selectbox("Industrias manufactureras",neg_C)
     pos_C = st.selectbox("Industrias manufactureras",opt,format_func = lambda x:neg_C[x])
