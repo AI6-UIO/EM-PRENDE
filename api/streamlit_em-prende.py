@@ -30,6 +30,8 @@ elif t1 == "Mediana empresa":
 elif t1 == "Grande empresa":
     tmn = [0,0,0,1]
 
+st.info(tmn)
+    
 st.header("¿Cuál es tu principal área de negocio?")
 
 # Area de negocio
