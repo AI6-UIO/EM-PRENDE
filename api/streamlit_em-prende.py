@@ -88,7 +88,7 @@ st.info(pos_negocios)
 #st.info(pos_negocios)
 
 
-if pos_negocios == negocios[3]:
+if pos_negocios == 3:
     opt = list(range(len(neg_C)))
     #C = st.selectbox("Industrias manufactureras",neg_C)
     pos_C = st.selectbox("Industrias manufactureras",opt,format_func = lambda x:neg_C[x])
@@ -96,7 +96,7 @@ if pos_negocios == negocios[3]:
     pos_neg_C3 = pos_C - 1
     #example_set = (tmn,neg_C3[pos_neg_C3],tmn)
     #st.info(example_set)
-elif pos_negocio != negocios[3]:
+elif pos_negocio != 3:
     st.write("Aun en construcción")
     
 # Prediccion
