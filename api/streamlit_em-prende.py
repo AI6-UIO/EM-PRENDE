@@ -92,7 +92,7 @@ pos_negocios = st.selectbox("Mi área principal de negocio es:",opt1,format_func
 if pos_negocios == 3:
     opt = list(range(len(neg_C)))
     #C = st.selectbox("Industrias manufactureras",neg_C)
-    pos_C = st.selectbox("Industrias manufactureras. El subsector económico qué mas se acerca a mi negocio es",opt,format_func = lambda x:neg_C[x])
+    pos_C = st.selectbox("Industrias manufactureras",opt,format_func = lambda x:neg_C[x])
     st.info(neg_C[pos_C])
     pos_neg_C3 = pos_C - 1
     CIIU_3numbers = (neg_C3[pos_neg_C3])
