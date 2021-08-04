@@ -82,10 +82,11 @@ neg_C3 = (101,110,120,131,141,151,161,170,181,191,201,210,221,231,241,251)
 #st.info(negocio)
 
 opt1 = list(range(len(negocios)))
-pos_negocios = 0
+
 pos_negocios = st.selectbox("Mi área principal de negocio es:",opt1,format_func = lambda x:negocios[x])
 #Uncomment the next line for debugging:
 #st.info(pos_negocios)
+#legacy Code for the first version:
 #st.header("Negocios pos_negocios:")
 #st.info(pos_negocios)
 
@@ -99,7 +100,7 @@ if pos_negocios == 3:
     pos_neg_C3 = pos_C - 1
     CIIU_3numbers = (neg_C3[pos_neg_C3])
     #st.info(CIIU_3numbers)
-elif pos_negocio != 3:
+elif pos_negocios != 3:
     st.write("Aun en construcción")
     
 # Prediccion
