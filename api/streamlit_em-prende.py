@@ -89,6 +89,7 @@ st.info(pos_negocios)
 codigo_negocios = np.zeros(21,dtype=np.int16)
 st.info(codigo_negocios)
 codigo_negocios[pos_negocios - 1] = 1
+st.info(codigo_negocios)
 example_set = tmn.extend(codigo_negocios)
 st.info(example_set)
 
