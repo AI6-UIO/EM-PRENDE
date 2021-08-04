@@ -82,9 +82,9 @@ negocio = st.selectbox("Mi área principal de negocio es:",negocios)
 st.info(negocio)
 
 opt1 = list(range(len(negocios)))
-pos_negocios = st.selectbox("Industrias manufactureras",opt1,format_func = lambda x:negocios[x])
+pos_negocios = st.selectbox("funcion de posición",opt1,format_func = lambda x:negocios[x])
 st.header("Negocios pos_negocios:")
-st.info(negocios[pos_negocios])
+st.info(pos_negocios)
 codigo_negocios = np.zeros(21,dtype=np.int16)
 codigo_negocios[pos_negocios - 1] = 1
 example_set = tmn.extend(codigo_negocios)
