@@ -21,13 +21,13 @@ t = ["","Microempresa","Pequeña empresa","Mediana empresa","Grande empresa"]
 t1 = st.selectbox("El tamaño de mi negocio es:",t)
 st.info(t1)
 if t1 == "Microempresa":
-    tmn = (1,0,0,0)
+    tmn = [1,0,0,0]
 elif t1 == "Pequeña empresa":
-    tmn = (0,1,0,0)
+    tmn = [0,1,0,0]
 elif t1 == "Mediana empresa":
-    tmn = (0,0,1,0)
+    tmn = [0,0,1,0]
 elif t1 == "Grande empresa":
-    tmn = (0,0,0,1)
+    tmn = [0,0,0,1]
 
 st.header("¿Cuál es tu principal área de negocio?")
 
@@ -80,7 +80,8 @@ st.info(negocio)
 
 codigo_negocios = np.zeros(21)
 codigo_negocios[negocios - 1] = 1
-example_set = (tmn,codigo_negocios)
+example_set = tmn.extend(codigo_negocios)
+st.info(example_set)
 
 if negocio == negocios[3]:
     opt = list(range(len(neg_C)))
@@ -89,7 +90,7 @@ if negocio == negocios[3]:
     st.info(neg_C[pos_C])
     pos_neg_C3 = pos_C - 1
     #example_set = (tmn,neg_C3[pos_neg_C3],tmn)
-    st.info(example_set)
+    #st.info(example_set)
 elif negocio != negocios[3]:
     st.write("Aun en construcción")
     
