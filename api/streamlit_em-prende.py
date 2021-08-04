@@ -78,8 +78,10 @@ neg_C3 = (101,110,120,131,141,151,161,170,181,191,201,210,221,231,241,251)
 negocio = st.selectbox("Mi área principal de negocio es:",negocios)
 st.info(negocio)
 
+opt1 = list(range(len(negocios)))
+pos_negocios = st.selectbox("Industrias manufactureras",opt1,format_func = lambda x:negocios[x])
 codigo_negocios = np.zeros(21)
-codigo_negocios[negocios - 1] = 1
+codigo_negocios[pos_negocios - 1] = 1
 example_set = tmn.extend(codigo_negocios)
 st.info(example_set)
 
