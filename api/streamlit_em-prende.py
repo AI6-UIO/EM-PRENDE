@@ -108,13 +108,13 @@ if st.button("Emprende"):
     st.balloons()
     #pos_neg_C3 = 0
     st.success("Su negocio es similar a negocios que han sido exitosos dentro de Quito")
-    st.warning("Avertencia: Su negocio es similar a negocios poco exitosos dentro de Quito")
+    st.warning("Avertencia: Su negocio es similar a negocios promedio dentro de Quito")
     codigo_negocios = np.zeros(21,dtype=np.int16)
-    st.info(codigo_negocios)
+    #st.info(codigo_negocios)
     codigo_negocios[pos_negocios - 1] = 1
-    st.info(codigo_negocios)
+    #st.info(codigo_negocios)
     tmn.extend(codigo_negocios)
-    st.info(tmn)
+    #st.info(tmn)
     
     
         
