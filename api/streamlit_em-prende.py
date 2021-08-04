@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import pandas as pd
+import numpy as np
 
 img = Image.open(r"api/logo.png")
 entradas = []
@@ -80,7 +81,8 @@ st.info(negocio)
 
 opt1 = list(range(len(negocios)))
 pos_negocios = st.selectbox("Industrias manufactureras",opt1,format_func = lambda x:negocios[x])
-codigo_negocios = np.zeros(21)
+st.info(negocios[pos_negocios])
+codigo_negocios = np.zeros(21,dtype=np.int16)
 codigo_negocios[pos_negocios - 1] = 1
 example_set = tmn.extend(codigo_negocios)
 st.info(example_set)
