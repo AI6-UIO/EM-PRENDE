@@ -97,7 +97,7 @@ if pos_negocios == 3:
     st.info(neg_C[pos_C])
     pos_neg_C3 = pos_C - 1
     CIIU_3numbers = (neg_C3[pos_neg_C3])
-    st.info(CIIU_3numbers)
+    #st.info(CIIU_3numbers)
 elif pos_negocio != 3:
     st.write("Aun en construcción")
     
