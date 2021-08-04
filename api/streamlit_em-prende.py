@@ -78,13 +78,14 @@ neg_C = ("","Elaboración de productos alimenticios",
 #Código CIIU para el área C (tres números, solo se toma la primera actividad (grupo) de cada division por motivos de test.
 neg_C3 = (101,110,120,131,141,151,161,170,181,191,201,210,221,231,241,251)
 
-negocio = st.selectbox("Mi área principal de negocio es:",negocios)
-st.info(negocio)
+#negocio = st.selectbox("Mi área principal de negocio es:",negocios)
+#st.info(negocio)
 
 opt1 = list(range(len(negocios)))
-pos_negocios = st.selectbox("funcion de posición",opt1,format_func = lambda x:negocios[x])
-st.header("Negocios pos_negocios:")
+pos_negocios = st.selectbox("Mi área principal de negocio es:",opt1,format_func = lambda x:negocios[x])
 st.info(pos_negocios)
+#st.header("Negocios pos_negocios:")
+#st.info(pos_negocios)
 codigo_negocios = np.zeros(21,dtype=np.int16)
 codigo_negocios[pos_negocios - 1] = 1
 example_set = tmn.extend(codigo_negocios)
